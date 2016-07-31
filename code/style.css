@@ -1,0 +1,284 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*=================================================
+=Reset
+==================================================*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li, hr,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	}
+	
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+	}
+	
+body {
+	border-top: 5px solid #ca0a28;
+	background-color: #ffffff;
+	font-family: Arial,Helvetica,sans-serif;
+	margin: 0 auto;
+	}
+	
+ol, ul {
+	list-style: none;
+	}	
+	
+blockquote, q {
+	quotes: none;
+	}
+	
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+	}
+	
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+
+/*=================================================
+=Structure
+==================================================*/
+
+#header,#footer {
+	padding:15px 0;
+	}	
+	
+#header {
+	border-bottom: 1px solid #d3d3d3;
+	margin-bottom: 50px;
+	}
+	
+#footer {
+	border-top: 1px solid #d3d3d3;
+	margin-top: 50px;
+	vertical-align:middle;
+	}	
+			
+#logo { /* contains logo, name and title */
+	background-color:#00FF66;
+	height:150px;
+	float: left;
+	}	
+	
+/*=================================================
+=Typography
+==================================================*/
+
+h1, h2, h3, h4, h5, h6 {	/*Overall styling for header fonts. Specific sizes/line heights are below*/
+	color: #000000;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 120%;
+	}
+
+p {
+	color:#666666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.15em;	/* 16px */
+	line-height: 1.75em; /* 24px */
+	margin: 0.5em 0; /* 8px */
+	}
+	
+	.callout {
+		font-size:1.75em;
+		}
+		
+	.small {
+		font-size:0.85em;
+		}	
+	
+.lowercase { /* h1 lowercase */
+	text-transform: lowercase;
+	}	
+	
+.center {
+	text-align:center;
+	}
+	
+.right {
+	text-align:right;
+	float:right;
+	}
+	
+.left {
+	text-align:left;
+	}	
+		
+strong,b {
+	font-weight:bold;
+	}	
+	
+em {
+	font-style:italic;
+	}		
+
+	
+/*=================================================
+=Links
+==================================================*/
+
+/* normal link styling */
+
+a, a:link, a:visited {
+	color: #ca0a28;
+	text-decoration: none;
+	font-weight:bold;
+	}
+	
+.button a, .button a:link, #header a, #header a:link, #footer a, #footer a:link { /*no border on image links*/
+	border-bottom: none;
+	}
+	
+.title	{
+	color: inherit !important;
+	font-weight:normal !important;
+}
+
+/*=================================================
+=Lists
+==================================================*/
+
+/* basic list styling */
+
+li {
+	color:#666666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.15em;	/* 16px */
+	xline-height: 140%;
+	margin: 0.5em 0 0.5em 1em; /* 8px */
+	}
+		
+/* header navigation */
+
+#navigation {	
+	list-style-type: none;
+	overflow: hidden;
+	xpadding: 70px 0 0 80px; /* allows logo to float to far left of navigation */
+	}
+	
+	#navigation li {
+		float: left;
+		}
+	
+		#navigation li a:link,a:visited {
+			display: block;
+			text-decoration: none;
+			width: 150px;
+			text-align:center;
+			}
+				
+/*gallery  thumbnail styling*/
+
+		
+		
+/* project images */
+
+ul#project-images li {
+	border-bottom: 1px dotted #d3d3d3;
+	padding: 50px 0;
+	margin: 0;
+	}	
+	
+	
+ul#project-images li:last-child {
+	border-bottom: none !important;
+	}		
+	
+/*=================================================
+=Images
+==================================================*/
+
+/*=================================================
+=buttons
+==================================================*/
+
+
+.button,input[type="submit"]{
+	background-color:rgb(153, 33, 105);
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-o-border-radius:5px;
+	height:45px;
+	width:200px;
+}
+
+.button a,.button a:link{
+	color:#ffffff;
+	display:block;
+	font-weight:normal;
+	line-height:45px;
+	text-decoration:none;
+	text-align:center;
+	vertical-align:middle;
+	}
+	
+.button a:hover,.button a:active{
+	background-color:#00cccc;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-o-border-radius:5px;
+	}
+	
+/*=================================================
+=Forms
+==================================================*/
+
+input {
+	border:2px solid #efefef;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-o-border-radius:5px;
+	height:45px;
+	margin: 0.5em 0px;
+	width:200px;
+}
+
+input[type="submit"] {
+	border:none;
+}	
+
+/* cancels out floats */
+
+.clear { 
+	clear: both;
+	}
+	
+/*styling for horizontal rule*/
+
+hr { 
+	background-color: #d3d3d3; /* gives hr a color */
+	height: 1px;
+	margin: 50px 0; /*match visually with top margin of h1 title header*/
+}
