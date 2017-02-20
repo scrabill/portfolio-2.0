@@ -12,7 +12,7 @@ My plan in 2017 is to phase out the static page and move it to be responsive and
 - [] Improve page load speed see results [here](https://developers.google.com/speed/pagespeed/insights/?url=shannoncrabill.com&tab=mobile)
 - [] Update bio
 - [] Update work samples (more code, less design)
-- [] Add blog 
+- [] Add [blog](https://github.com/scrabill/twentyseventeen-child)
 - [] Remove unused CSS/JS
 
 # References
